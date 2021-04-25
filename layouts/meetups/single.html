@@ -14,4 +14,15 @@
     </a>
   </p>
 
+  {{ with .Params.videos }}
+    <h3>Videos</h3>
+    <ul>
+      {{ range . }}
+        <li>
+          <a href="/videos/{{ lower . }}/">{{ . }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+
 {{ end }}
