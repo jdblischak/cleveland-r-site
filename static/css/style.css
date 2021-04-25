@@ -1,0 +1,31 @@
+/* Center */
+body {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+/* Match link colors to R logo (used Firefox Eyedropper) */
+a {
+  color: #1f65b7;
+}
+
+a:visited {
+  color: #939299;
+}
+
+/* 
+Potential free images to use for header:
+
+https://unsplash.com/photos/grHuhOaIP0U
+https://unsplash.com/photos/vzjbwzBljIo
+https://unsplash.com/photos/jYtgDr-0AyM
+*/
+
+/* 
+CSS resources:
+
+https://andybrewer.github.io/mvp/
+https://jgthms.com/web-design-in-4-minutes/
+https://jgthms.com/wysiwyg.css/
+
+*/
