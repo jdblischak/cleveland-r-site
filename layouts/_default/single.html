@@ -4,6 +4,6 @@
 
   <h3>{{ dateFormat "2006-01-02" .Date }}</h3>
 
-  {{ .Content }}
+  {{ .Content | markdownify }}
 
 {{ end }}

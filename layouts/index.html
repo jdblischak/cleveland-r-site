@@ -2,4 +2,32 @@
 
   <h1>{{ .Title }}</h1>
 
+  <h2>Recent meetups</h2>
+  <p>
+    To receive notifications for upcoming meetups, you can join our
+    <a href="https://www.meetup.com/Cleveland-UseR-Group" target="_blank">meetup.com group</a>.
+  </p>
+  <ul>
+    {{ range first 5 (where .Site.RegularPages "Section" "meetups") }}
+    <li>
+      {{ dateFormat "2006-01-02" .Date }}:
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+
+  <h2>Recent videos</h2>
+  <p>
+    To receive notifications for the latest videos, you can subscribe to our
+    <a href="https://www.youtube.com/channel/UC7C4YZ-9itQW7Nl4RVKDflg" target="_blank">YouTube channel</a>.
+  </p>
+  <ul>
+    {{ range first 5 (where .Site.RegularPages "Section" "videos") }}
+    <li>
+      {{ dateFormat "2006-01-02" .Date }}:
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+
 {{ end }}
