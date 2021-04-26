@@ -1,7 +1,18 @@
-/* Center */
-body {
+header {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1f65b7;
+  text-align: center;
+}
+
+main {
   margin: 0 auto;
   max-width: 50em;
+}
+
+footer {
+  background-color: #939299;
+  text-align: center;
 }
 
 /* Match link colors to R logo (used Firefox Eyedropper) */
