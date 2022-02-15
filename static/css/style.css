@@ -1,7 +1,15 @@
+body {
+  margin: 0;
+}
+
 header {
-  border-width: 5px;
-  border-style: solid;
-  border-color: #1f65b7;
+  background-image: url("/img/jYtgDr-0AyM.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  max-width: none;
+  padding: 40vw 2em;
   text-align: center;
 }
 
@@ -30,6 +38,7 @@ Potential free images to use for header:
 https://unsplash.com/photos/grHuhOaIP0U
 https://unsplash.com/photos/vzjbwzBljIo
 https://unsplash.com/photos/jYtgDr-0AyM
+https://unsplash.com/photos/qQLg8lPYU1k
 */
 
 /* 
