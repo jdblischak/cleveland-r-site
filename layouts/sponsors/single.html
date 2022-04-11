@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  <p>
+    <img src="/img/sponsors/{{ .Params.logo }}" alt="Logo for {{ .Title }}">
+  </p>
+
+  <h2>{{ .Title }}</h2>
+
+  <p>
+    We are grateful for their sponsorship which included {{ .Description | markdownify }}
+  </p>
+
+  <p>
+    Learn more about {{ .Title }} at their <a href="{{ .Params.website }}" target="_blank">website</a>
+  </p>
+
+{{ end }}
